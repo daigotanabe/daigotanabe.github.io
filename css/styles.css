@@ -200,7 +200,6 @@ body{
   border-radius: 4px;
   background: rgba(88, 20, 20, 0.80);
   color: #fff;
-
 }
 
 .workbtn a:hover{
@@ -208,8 +207,10 @@ body{
 }
 
 .works div{
+  margin: 30px auto;
   border: 3px #000 solid;
-  margin: 20px;
+  /* margin: 60px; */
+  width: 60%;
   border-radius: 5px;
 }
 
@@ -239,5 +240,13 @@ body{
 
   .skill-pc{
     display: flex;
+  }
+
+  .works div{
+    margin: 30px auto;
+    border: 3px #000 solid;
+    /* margin: 60px; */
+    width: 35%;
+    border-radius: 5px;
   }
 }
