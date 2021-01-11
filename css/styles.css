@@ -241,6 +241,14 @@ body{
     padding-bottom: 20px;
   }
 
+  .profileList > ul{
+    padding: 0 ;
+    margin: 0 auto;
+    width: 40%; 
+    white-space: nowrap;
+  }
+
+
   .profileName{
     /* display: flex; */
     justify-content: center;
@@ -270,9 +278,9 @@ body{
     line-height: 35px;
   }
 
-  .profileName ul{
+  /* .profileName ul{
     margin-left: 20px;
-  }
+  } */
 
   .skill{
     padding: 40px 0;
