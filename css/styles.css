@@ -103,7 +103,9 @@ body{
   text-align: center;
   line-height:350px;
   font-size: 20px;
-  color: #fff;
+  font-weight: bold;
+  color: rgb(255, 250, 250);;
+  /* color: #fff; */
 }
 
 .topLogo h1{
@@ -112,10 +114,12 @@ body{
 .profile{
   margin: 0;
   text-align: center;
+  background: rgb(255, 250, 250);
 }
 
 .profile h1{
   font-size: 50px;
+  font-weight: bold;
   padding: 40px 0;
   margin: 0;
 }
@@ -141,7 +145,7 @@ body{
 
 .skill{
   /* text-align: center; */
-  /* background: steelblue; */
+  /* background: rgba(76, 204, 62, 0.72); */
   background: rgba(88, 20, 20, 0.80);
   padding: 40px;
 }
@@ -149,7 +153,9 @@ body{
 .skill h1{
   text-align: center;
   font-size: 50px;
-  color: #fff;
+  font-weight: bold;
+  color: rgb(255, 250, 250);;
+  /* color: #fff; */
   margin: 0;
   /* padding: 40px 0; */
 }
@@ -158,7 +164,7 @@ body{
   margin: 30px auto;
   width: 300px;
   height: auto;
-  background: #fff;
+  background: rgb(255, 250, 250);;
   border-radius: 10px;
   padding: 10px;
 }
@@ -168,6 +174,11 @@ body{
   margin: 0;
   padding: 15px;
   font-size: 20px;
+}
+
+.skillDetail p{
+  margin: 0;
+  padding: 16px 10px;
 }
 
 .skillMenu{
@@ -185,10 +196,14 @@ body{
 
 .works{
   text-align: center;
+  background: rgb(255, 250, 250);
+  padding: 40px 0;
 }
 
 .works h1{
   font-size: 50px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .works p{
@@ -199,6 +214,7 @@ body{
   width: 90%;
   height: auto;
   border-radius: 4px;
+  border: 2px solid #000;
 }
 
 .works img:hover{
@@ -207,21 +223,23 @@ body{
 
 .workBtn a{
   text-decoration: none;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   padding: 5px;
   margin-bottom: 5px;
   border-radius: 4px;
-  background: rgba(88, 20, 20, 0.80);
-  color: #fff;
   border: #000 solid 1px;
-  background:#fff;
-  color:rgba(88, 20, 20, 0.80);
+  color:rgb(255, 250, 250);;
+  background:rgba(88, 20, 20, 0.80);
+  /* background:rgb(255, 250, 250);;
+  color:rgba(88, 20, 20, 0.80); */
 }
 
 .workBtn a:hover{
-  background: rgba(88, 20, 20, 0.80);
-  color: #fff;
+  color: rgba(88, 20, 20, 0.80);
+  background: rgb(255, 250, 250);;
+  /* background: rgba(88, 20, 20, 0.80);
+  color: rgb(255, 250, 250);; */
 }
 
 .works div{
