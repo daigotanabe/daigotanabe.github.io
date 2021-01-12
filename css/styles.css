@@ -135,8 +135,15 @@ body{
   line-height: 1.8;
 }
 
-.profileJob p{
-  margin: 60px;
+.profileJob{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profileJob  p{
+  text-align: center;
+  margin: 0;
+  padding-bottom:40px;
   line-height: 1.6;
 }
 
