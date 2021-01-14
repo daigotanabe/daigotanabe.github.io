@@ -2,10 +2,6 @@ html{
   scroll-behavior: smooth;
 }
 
-head{
-  /* font-family: 'Courier New', Courier, monospace; */
-}
-
 body{
   margin: 0;
   padding: 0;
@@ -33,6 +29,7 @@ body{
 }
 
 .content{
+  color: #333;
   position: fixed;
   opacity: 0.1;
   top: 0;
@@ -49,7 +46,7 @@ body{
 .content h1{
   padding:60px 0 0 10px;
   font-size: 24px;
-  color: #000;
+  color: #333;
   line-height: 48px;
   font-weight: bold;
 }
@@ -65,7 +62,7 @@ body{
   width: 100%;
   height: 20px;
   font-size: 20px;
-  color: #000;
+  color: #333;
   cursor: pointer;
   user-select: none;
 }
@@ -112,6 +109,7 @@ body{
   margin: 0;
   text-align: center;
   background: rgb(255, 250, 250);
+  color: #333;
 }
 
 .profile h1{
@@ -127,12 +125,19 @@ body{
   border-radius: 30%;
 }
 
-.profileName ul{
+.profileName dl{
   display: block;
   width: 300px;
   text-align: left;
   margin:20px auto;
   line-height: 1.8;
+}
+dt{
+  float: left;
+}
+
+dt::after{
+  content: "："
 }
 
 .profileJob{
@@ -144,7 +149,7 @@ body{
   text-align: center;
   margin: 0;
   padding-bottom:40px;
-  line-height: 1.6;
+  line-height: 1.3;
 }
 
 .skill{
@@ -168,7 +173,8 @@ body{
   height: auto;
   background: rgb(255, 250, 250);;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0;
+  color: #333;
 }
 
 
@@ -181,7 +187,8 @@ body{
 
 .skillDetail p{
   margin: 0;
-  padding: 16px 10px;
+  padding: 16px 16px;
+  line-height: 1.3;
 }
 
 .skillDetail a{
@@ -201,6 +208,7 @@ body{
   text-align: center;
   background: rgb(255, 250, 250);
   padding: 40px 0;
+  color: #333;
 }
 
 .works h1{
@@ -211,10 +219,10 @@ body{
 
 
 .works img{
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 4px;
-  border: 2px solid #000;
+  /* border: 2px solid #333; */
 }
 
 .works img:hover{
@@ -228,7 +236,7 @@ body{
   padding: 5px;
   margin-bottom: 5px;
   border-radius: 4px;
-  border: #000 solid 1px;
+  border: #333 solid 1px;
   color:rgb(255, 250, 250);;
   background:rgba(88, 20, 20, 0.80);
   /* background:rgb(255, 250, 250);;
@@ -242,12 +250,21 @@ body{
   color: rgb(255, 250, 250);; */
 }
 
-.works div{
-  margin: 30px auto;
-  border: 3px #000 solid;
+.worksDetail{
   width: 80%;
-  border-radius: 5px;
+  margin: 30px auto;
+  border: 3px #333 solid;
+  background: #fff;
 }
+
+.worksElement{
+  margin: auto;
+  width: 100%;
+  /* border: 3px #333 solid; */
+  border-radius: 5px;
+  background: #fff;
+}
+
 
 @media(min-width:600px){
 
@@ -256,17 +273,18 @@ body{
   }
 
   .profile{
-    padding-bottom: 20px;
+    padding:0 40px 20px;
   }
 
-  .profileList > ul{
+  .profileList > dl{
+    padding-left: 40px;
     white-space: nowrap;
   }
 
 
   .profileName{
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 15px;
     line-height: 35px;
     width: 40%;
   }
@@ -277,7 +295,7 @@ body{
 
   .profileJob{
     width: 40%;
-    margin: 0 auto;
+    margin: 0 15px;
   }
 
   .profileJob p{
@@ -289,30 +307,50 @@ body{
     justify-content: center;
   }
 
-  .ex{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    line-height: 35px;
-  }
-
+  
   .skill{
-    padding: 40px 0;
+    padding:40px;
   }
-
+  
+  .skill h1{
+    padding-bottom: 40px;
+  }
+  
+  .skillDetail{
+    margin: 15px;
+  }
+  
   .skillPc{
     display: flex;
+    justify-content: center;
   }
-
+  
   .skillDetail{
     width: 40%;
     padding:10px 0;
   }
+  
+  .works{
+    padding:40px;
+  }
 
-  .works div{
-    margin: 30px auto;
-    border: 3px #000 solid;
+  .works h1{
+    padding-bottom: 40px;
+  }
+  
+  .worksPc{
+    display: flex;
+    justify-content: center;
+    line-height: 35px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .worksDetail{
     width: 40%;
+    margin: 15px 15px;
+    border: 3px #333 solid;
     border-radius: 5px;
   }
+
 }
