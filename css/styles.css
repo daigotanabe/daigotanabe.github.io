@@ -217,11 +217,16 @@ dt::after{
   margin: 0;
 }
 
+.worksDetail p{
+  margin: 0 5px;
+}
+
 
 .works img{
   width: 100%;
   height: auto;
   vertical-align: middle;
+  text-decoration: underline;
 }
 
 .works img:hover{
@@ -233,10 +238,10 @@ dt::after{
   font-size: 15px;
   font-weight: bold;
   padding: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 16px;
   border-radius: 5px;
-  border: #333 solid 1px;
-  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  /* border: #333 solid 1px; */
+  box-shadow: 0px 1px 16px  rgba(0,0,0,0.2);
   color:rgb(255, 245, 245);;
   background:rgba(88, 20, 20, 0.80);
   /* background:rgb(255, 245, 245);;
@@ -253,10 +258,11 @@ dt::after{
 .worksDetail{
   width: 80%;
   margin: 30px auto;
-  border: 1px #333 solid;
+  padding-bottom: 16px;
+  /* border: 1px #333 solid; */
   border-radius: 5px;
   background: #fff;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 16px  rgba(0,0,0,0.2);
 }
 
 .worksElement{
@@ -351,7 +357,7 @@ dt::after{
   .worksDetail{
     width: 40%;
     margin: 15px 15px;
-    border: 1px #333 solid;
+    border: 1px #f0f0f0 solid;
     border-radius: 5px;
   }
 
