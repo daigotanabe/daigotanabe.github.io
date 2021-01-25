@@ -5,7 +5,6 @@ html{
 body{
   margin: 0;
   padding: 0;
-  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .material-icons{
@@ -153,8 +152,6 @@ dt::after{
 }
 
 .skill{
-  /* text-align: center; */
-  /* background: rgba(76, 204, 62, 0.72); */
   background: rgba(88, 20, 20, 0.80);
   padding: 40px 0;
 }
@@ -240,7 +237,6 @@ dt::after{
   padding: 5px;
   margin-bottom: 16px;
   border-radius: 5px;
-  /* border: #333 solid 1px; */
   box-shadow: 0px 1px 16px  rgba(0,0,0,0.2);
   color:rgb(255, 245, 245);;
   background:rgba(88, 20, 20, 0.80);
@@ -259,7 +255,6 @@ dt::after{
   width: 80%;
   margin: 30px auto;
   padding-bottom: 16px;
-  /* border: 1px #333 solid; */
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 1px 16px  rgba(0,0,0,0.2);
@@ -268,13 +263,12 @@ dt::after{
 .worksElement{
   margin: auto;
   width: 100%;
-  /* border: 3px #333 solid; */
   border-radius: 5px;
   background: #fff;
 }
 
 
-@media(min-width:600px){
+@media(min-width:700px){
 
   .topLogo{
     font-size: 36px;
@@ -286,9 +280,8 @@ dt::after{
 
   .profileList > dl{
     padding-left: 40px;
-    white-space: nowrap;
+    word-wrap: break-word;
   }
-
 
   .profileName{
     justify-content: center;
@@ -307,7 +300,7 @@ dt::after{
   }
 
   .profileJob p{
-    margin: 0 20px 20px ;
+    /* margin: 0 20px 20px ; */
   }
 
   .profileDeta{
